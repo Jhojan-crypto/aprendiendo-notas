@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music Theory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <h1>Aprendamos las notas musicales! :)</h1>
+
+  <div class="hidden" id="gameBoard">
+
+
+    <div id="imageContainer">
+      <img id="musicNote" src="assets/FTreble.png" alt="F">
+    </div>
+
+    <div class="score-board">
+      <div id="wrong">Error: 0</div>
+      <div id="correct">Correcto: 0</div>
+    </div>
+    <div id="message"></div>
+    <div>
+      <button id="reset">Reset</button>
+    </div>
+
+
+    <div id="container">
+      <div id="containerWhiteKeys">
+        <div class= "whiteKeys keys" id= "keyC"></div>
+        <div class= "whiteKeys keys" id= "keyD"></div>
+        <div class= "whiteKeys keys" id= "keyE"></div>
+        <div class= "whiteKeys keys" id= "keyF"></div>
+        <div class= "whiteKeys keys" id= "keyG"></div>
+        <div class= "whiteKeys keys" id= "keyA"></div>
+        <div class= "whiteKeys keys" id= "keyB"></div>
+      </div>
+      <div id="containerBlackKeys">
+        <div class= "blackKeys keys" id="keyCsh"></div>
+        <div class= "blackKeys keys" id="keyDsh"></div>
+        <div class= "blackKeys keys" id="keyFsh"></div>
+        <div class= "blackKeys keys" id="keyGsh"></div>
+        <div class= "blackKeys keys" id="keyAsh"></div>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="instructions">
+      <p>Pongamos a prueba tu memoria musical</p>
+      <p> Ganaras :10 respuestas correctas</p>
+      <p> Pierdes :3 respuestas incorrectas</p>
+    <button id="startGame">Que comience el juego</button>
+    <img id="answerKey" src="assets/KeysInstructions.png" alt="Key">
+  </div>
+  </body>
+</html>
